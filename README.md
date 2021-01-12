@@ -22,3 +22,16 @@ date || credit || debit || balance
 13/01/2020 || 2000.00 || || 3000.00
 10/01/2020 || 1000.00 || || 1000.00
 ~~~
+
+#User stories
+~~~
+As a user
+So that I can protect my savings
+I would like to create a bank account
+~~~
+
+~~~
+As a user
+So that I can store my funds
+I would like to deposit into my bank account 
+~~~
