@@ -13,9 +13,16 @@ describe Account do
   end
 
   describe '#deposit' do
-    it "increases the balance by deposited amount" do
+    it "deposits money into account" do
       subject.deposit(100)
       expect(subject.balance).to eq 100
+    end
+  end
+
+  describe '#withdraw' do
+    it "withdraws money from account" do
+      subject.withdraw(50)
+      expect(subject.balance).to eq -50
     end
   end
 end
