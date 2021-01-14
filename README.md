@@ -39,5 +39,11 @@ I would like to deposit into my bank account
 ~~~
 As a user
 So that I can withdraw my funds
-I would like to withdraw from my bank account 
+I would like to withdraw from my bank account
+~~~
+
+~~~
+As a user
+So that I can see my transactions
+I would like to see transactions starting with most recent 
 ~~~

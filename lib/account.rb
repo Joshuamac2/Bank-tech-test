@@ -27,6 +27,6 @@ class Account
 
   def print_statement
     puts HEADER
-    @transactions.map(&:formate)
+    @transactions.reverse.map(&:formate)
   end
 end
