@@ -4,11 +4,16 @@ describe Account do
   let(:timestamp) { Time.now.strftime('%d/%m/%Y') }
 
   describe '#initialize' do
-    it 'balance starts nil' do
+    it 'transactions in history empty' do
       expect(subject.transactions).to be_empty
     end
 
-    it 'transactions in history empty' do
+    it 'transaction for statement' do
+      subject.deposit(100)
+      expect(subject.transactions.length > 0).to be_truthy
+    end
+
+    it 'balance starts nil' do
       expect(subject.balance).to eq 0
     end
   end
@@ -29,13 +34,13 @@ describe Account do
 
   describe '#print_statement' do
     it 'prints header' do
-      header = "date || credit || debit || Balance\n"
+      header = "date || credit || debit || balance\n"
       expect { subject.print_statement }.to output(header).to_stdout
     end
 
     it 'prints header' do
       subject.deposit(100)
-      header = "date || credit || debit || Balance\n#{timestamp}|| 100 || || Balance\n"
+      header = "date || credit || debit || balance\n#{timestamp}|| 100 ||  ||  100\n"
       expect { subject.print_statement }.to output(header).to_stdout
     end
   end

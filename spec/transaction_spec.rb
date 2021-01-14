@@ -1,15 +1,15 @@
 require 'transaction'
 
 describe Transaction do
-  describe '#initilalize' do
-    let(:transaction) { Transaction.new(amount: 10) }
-    let(:timestamp) { Time.now.strftime('%d/%m/%Y') }
+  let(:transaction) { Transaction.new(:amount, :account) }
+  let(:timestamp) { Time.now.strftime('%d/%m/%Y') }
 
-    it 'stores the amount from transaction' do
-      expect(transaction.amount).to eq(amount: 10)
+  describe '#initilalize' do
+    it 'validates class' do
+      expect(transaction).to be_a Transaction
     end
 
-    it 'stores time and dates' do
+    it 'stores dates' do
       expect(transaction.timestamp).to eq timestamp
     end
   end
