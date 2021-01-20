@@ -17,7 +17,7 @@ rspec
 - Account statement (date, amount, balance) printing.
 - Data can be kept in memory (it doesn't need to be stored to a database or anything).
 
-###Acceptance criteria
+### Acceptance criteria
 
 `Given` a client makes a deposit of 1000 on 10-01-2012
 `And` a deposit of 2000 on 13-01-2012
@@ -31,7 +31,7 @@ date || credit || debit || balance
 10/01/2020 || 1000.00 || || 1000.00
 ~~~
 
-#User stories
+### User stories
 ~~~
 As a user
 So that I can protect my savings
