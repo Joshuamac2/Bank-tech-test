@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/joshua/Makers/Bank-tech-test/spec/account_spec.rb": {
+      "/Users/joshua/Makers/afternoon/Bank-tech-test/spec/account_spec.rb": {
         "lines": [
           1,
           null,
@@ -52,7 +52,7 @@
           null
         ]
       },
-      "/Users/joshua/Makers/Bank-tech-test/lib/account.rb": {
+      "/Users/joshua/Makers/afternoon/Bank-tech-test/lib/account.rb": {
         "lines": [
           1,
           null,
@@ -88,7 +88,7 @@
           null
         ]
       },
-      "/Users/joshua/Makers/Bank-tech-test/lib/transaction.rb": {
+      "/Users/joshua/Makers/afternoon/Bank-tech-test/lib/transaction.rb": {
         "lines": [
           1,
           1,
@@ -110,7 +110,7 @@
           null
         ]
       },
-      "/Users/joshua/Makers/Bank-tech-test/spec/transaction_spec.rb": {
+      "/Users/joshua/Makers/afternoon/Bank-tech-test/spec/transaction_spec.rb": {
         "lines": [
           1,
           null,
@@ -139,6 +139,6 @@
         ]
       }
     },
-    "timestamp": 1611146147
+    "timestamp": 1612540559
   }
 }
